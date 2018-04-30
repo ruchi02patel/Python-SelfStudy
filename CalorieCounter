@@ -1,0 +1,23 @@
+dog_cal = 140
+bun_cal = 120
+ket_cal = 80
+mus_cal = 20
+onion_cal = 40
+n = 0
+y = 1
+
+print "\tDog\tBun\tKetchup\tMustard\tOnion\tCalories"
+count = 1
+for dog in [n, y]:
+    for bun in [n, y]:
+        for ketchup in [n, y]:
+            for mustard in [n, y]:
+                for onion in [n, y]:
+                    total_cal = (bun * bun_cal)+(dog * dog_cal) + \
+                                (ketchup * ket_cal)+(mustard * mus_cal) + \
+                                    (onion * onion_cal)
+                    print "#", count, "\t",
+                    print dog, "\t", bun, "\t", ketchup, "\t",
+                    print mustard, "\t", onion,
+                    print "\t", total_cal
+                    count = count + 1
